@@ -1,0 +1,79 @@
+Pseudocodes:
+
+BMICalculatorController Class:
+
+calculateButtonPressed:
+input: action event
+output: Display BMI results to user: value, status, range. 
+Error if user enters an invalid input.
+
+Store user weight in a Double variable
+If weight is in kg
+	convert weight from kg to lbs
+If weight = 0
+	prompt error message
+
+Store user height in a Double variable
+If height is in cm
+	convert height from cm to in
+If height = 0
+	prompt error message
+
+Calculate BMI 
+
+Display BMI to user
+
+------------------------------------------------------------------------
+
+resetButtonPressed:
+input: action event
+output: reset all labels and text fields to empty String
+
+Set labels and text fields to empty string
+
+------------------------------------------------------------------------
+
+convertKgToLbs:
+input: user weight in kilograms
+output: converted weight from kilogram to pounds
+
+User weight = user weight in kilogram * 2.20462262
+return user weight
+
+------------------------------------------------------------------------
+
+convertCmToIn:
+input: user height in centimeters
+output: converted height from centimeters to inch
+
+User height = user height in centimeters * 0.393701
+return user height
+
+------------------------------------------------------------------------
+
+calculateBMI:
+input: user's weight and height
+output: user's calculated BMI
+
+User BMI = (703 * weight) / (height * height)
+return user BMI value
+
+------------------------------------------------------------------------
+
+resultBMI:
+input: user's BMI
+output: display result to user: value, status, range
+
+Set BMI value label to BMI
+
+If BMI < 18.5
+	underweight ( BMI < 18.5) 
+If 18.5 <= BMI <= 24.9
+	normal weight (BMI 18.5-24.9)
+If 25.0 <= BMI <= 29.9
+	 overweight (BMI 25.0 - 29.9)
+If BMI > 30
+	overweight (BMI > 30) 
+	
+------------------------------------------------------------------------
+
